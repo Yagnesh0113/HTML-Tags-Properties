@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Properties</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#basic_structure">Basic Structure</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#semantic">Semantic</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#block_inline">Block and Inline</a></li>
+        </ul>
+    </div>
+    <section id="intro">
+        <h1>Introduction : -</h1>
+        <h2><mark>HTML is the standard markup language for creating Web pages.</mark></h2>
+        <h3>What is HTML?</h3>
+        <ol>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML is the standard markup language for creating Web pages</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+        </ol>
+    </section>
+    <hr>
+    <section id="basic_structure">
+        <h1>Basic Structure : -</h1>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- content goes here --&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <ol>
+            <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
+            <li>The &lt;html&gt; element is the root element of an HTML page</li>
+            <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+            <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+            <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+        </ol>
+    </section>
+    <hr>
+    <section id="text">
+        <h1>Texts : -</h1>
+        <h2>Heading Tags</h2>
+        <pre>
+            &lt;h1&gt;This is a heading 1&lt;/h1&gt;
+            &lt;h2&gt;This is a heading 2&lt;/h2&gt;
+            &lt;h3&gt;This is a heading 3&lt;/h3&gt;
+            &lt;h4&gt;This is a heading 4&lt;/h4&gt;
+            &lt;h5&gt;This is a heading 5&lt;/h5&gt;
+            &lt;h6&gt;This is a heading 6&lt;/h6&gt;
+        </pre>
+        <h2>Paragraph Tags</h2>
+        <pre>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        </pre>
+        <h2>Emphasis Tags</h2>
+        <pre>
+            &lt;em&gt;This is emphasized text.&lt;/em&gt;
+            &lt;strong&gt;This is strong text.&lt;/strong&gt;
+            &lt;mark&gt;This is marked text.&lt;/mark&gt;
+            &lt;del&gt;This text has been deleted.&lt;/del&gt;
+            &lt;ins&gt;This text has been inserted.&lt;/ins&gt;
+        </pre>
+        <h2>Sub and Super Script Tag</h2>
+        <pre>
+            &lt;sub&gt;This is a subscript.&lt;/sub&gt;
+            &lt;sup&gt;This is a superscript.&lt;/sup&gt;
+        </pre>
+        <h2>Quotation Tags</h2>
+        <pre>
+            &lt;q&gt;This is a short quotation.&lt;/q&gt;
+            &lt;blockquote&gt;This is a block quotation.&lt;/blockquote&gt;
+        </pre>
+        <h2>Inserted and Preformatted Text Tags</h2>
+        <pre>
+            &lt;ins&gt;This text has been inserted.&lt;/ins&gt;
+            &lt;pre&gt;This is a preformatted text.&lt;/pre&gt;
+        </pre>
+    </section>
+    <hr>
+    <section id="lists">
+        <h1>Lists</h1>
+        <h2>Unordered Lists</h2>
+        <pre>
+            &lt;ul&gt;
+                &lt;li&gt;Item 1&lt;/li&gt;
+                &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+        <h2>Ordered Lists</h2>
+        <pre>
+            &lt;ol&gt;
+                &lt;li&gt;Item 1&lt;/li&gt;
+                &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ol&gt;
+        </pre>
+        <h2>Definition Lists</h2>
+        <pre>
+            &lt;dl&gt;
+                &lt;dt&gt;Term 1&lt;/dt&gt;
+                &lt;dd&gt;Definition 1&lt;/dd&gt;
+                &lt;dt&gt;Term 2&lt;/dt&gt;
+                &lt;dd&gt;Definition 2&lt;/dd&gt;
+            &lt;/dl&gt;
+        </pre>
+        <h2>Nested Lists</h2>
+        <pre>
+            &lt;ul&gt;
+                &lt;li&gt;Item 1&lt;/li&gt;
+                &lt;li&gt;Item 2&lt;ul&gt;
+                        &lt;li&gt;Subitem 1&lt;/li&gt;
+                        &lt;li&gt;Subitem 2&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+    </section>
+    <hr>
+    <section id="links">
+        <h1>Links</h1>
+        <h2>Inline Links</h2>
+        <pre>
+            &lt;a href="https://www.example.com"&gt;This is a Link&lt;/a&gt;
+        </pre>
+        <h2>External Links</h2>
+        <pre>
+            &lt;a href="https://www.example.com" target="_blank"&gt;Open in new Tab&lt;/a&gt;
+        </pre>
+        <h2>Email Links</h2>
+        <pre>
+            &lt;a href="mailto:example@example.com"&gt;Send Email&lt;/a&gt;
+        </pre>
+    </section>
+    <hr>
+    <section id="images">
+        <h1>Images</h1>
+        <h2>Local Images</h2>
+        <pre>
+            &lt;img src="image.jpg" alt="Image Description"&gt;
+        </pre>
+        <h2>Remote Images</h2>
+        <pre>
+            &lt;img src="https://example.com/image.jpg" alt="Image Description"&gt;
+        </pre>
+        <h2>Image with height and width</h2>
+        <pre>
+            &lt;img src="image.jpg" alt="Image Description" width="300" height="200"&gt;
+        </pre>
+    </section>
+    <hr>
+    <section id="tables">
+        <h1>Tables</h1>
+        <h2>Basic Table</h2>
+        <pre>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Header 1&lt;/th&gt;
+                    &lt;th&gt;Header 2&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                    &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                    &lt;td&gt;Row 1, Column 3&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                    &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                    &lt;td&gt;Row 2, Column 3&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </pre>
+        <h2>Table with borders</h2>
+        <pre>
+            &lt;table border="1"&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Header 1&lt;/th&gt;
+                    &lt;th&gt;Header 2&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                    &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                    &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </pre>
+    </section>
+    <hr>
+</body>
+</html>
